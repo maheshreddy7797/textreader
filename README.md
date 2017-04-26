@@ -4,16 +4,17 @@
 ```
 Download from github
   $ git clone https://github.com/maheshreddy7797/textreader
-  $ cd textreader
+
 ```
 ## Running Docker file
 
 ```
-  $ sudo docker build -t textreader .
-  $ sudo docker run textreader
+  $ cd textreader
+  $ sudo docker build -t pyread .
+  $ sudo docker run -v /path/to/text/file:/datadir pyread
 ```
 # From Docker hub
 
 ```
-  $ sudo docker pull maheshreddy7797/textreader
-  $ sudo docker run maheshreddy7797/textreader
+  $ sudo docker pull maheshreddy7797/pyread
+  $ sudo docker run -v /path/to/text/file:/datadir maheshreddy7797/pyread
